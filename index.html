@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+</head>
+<body>
+    <section class="container">
+        <aside>
+            <div class="avatar ">
+                 <img class="image" src="/images/img2.jpg" ></img>                
+            </div>
+            <h2>Jamilu Jibrilla</h2>
+            <button>Frontend Web Developer</button>
+            <ul class="list-details">
+                <li class="list-item">
+                    <i class="fa fa-calendar"></i><span>May 5, 1592</span>
+                </li>
+                
+                
+                <li class="list-item">
+                    <i class="fa fa-map-marker"></i><span>Adamawa, Nigeria</span>
+                </li>
+                
+
+                <li class="list-item">
+                    <i class="fa fa-envelope"></i><span>pilot@gmail.com</span>
+                </li>
+                
+                <li class="list-item">
+                    <i class="fa fa-phone"></i><span>+2348063443742</span>
+                </li>
+            </ul>
+            <a href="/pages/contact.html">
+                <button class="cv">Contact me</button>
+            </a>
+        </aside>
+        <main>
+            <section class="header">
+                <h1>About Me</h1>
+                <hr>
+                <nav>
+                    <ul class="nav hidden">
+                        <li><a href="/pages/login.html">Login</a></li>
+                        <li><a href="/pages/register.html">Sign up</a></li>
+                        <li><a href="/pages/calculator.html">Calculator</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </nav>
+            </section>
+                <p class="desc">I'm a solution-driven Web Developer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfactions. </p>
+                <p class="desc">Proven experience developing consumer-focused websites using HTML, CSS and JavaScript frameworks, meeting highest standards for web design, user experience, best practices and speed to promote organization-specifications. </p>
+                <section class="specialization">
+                    <h1>What I Do</h1>
+                    <div class="cards">
+                    <div class="card">
+                        <img src="/icons/icon-design.svg" alt="">
+                        <div class="details">
+                            <h3>Web Design</h3>
+                            <p>The most modern and high-quality design made at a professional level.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/icons/icon-dev.svg" alt="">
+                        <div class="details">
+                            <h3>Web Development</h3>
+                            <p>The most modern and high-quality design made at a professional level.</p>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+        </main>
+    </section>
+
+    <script>
+        let hamburger = document.querySelector("nav")
+        let nav = document.querySelector(".nav")
+        hamburger.addEventListener("click", function() {
+            nav.classList.toggle("hidden")
+        })
+    </script>
+</body>
+</html>
