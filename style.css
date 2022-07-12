@@ -4,13 +4,13 @@
      background-repeat: no-repeat;
      color: #D6D5D9;
      @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
- }
+   }
  html {
     font-family: 'Archivo', sans-serif;
     position: relative;
  }
 .container {
-    height: 180vh;
+/*     height: 330vh; */
     /* width: 100vw; */
     background-image: url(../images/triangles-top.svg), url(../images/triangles-bottom.svg);
     background-color: #272333;
@@ -27,7 +27,7 @@
 aside {
     box-shadow: 0px 40px 50px rgb(32 29 42 / 75%);
     width: 22%;
-    height: 39%;
+    height: 46%;
     position: sticky;
     top: 120px;
     margin: auto;
@@ -40,13 +40,11 @@ main {
     margin: 150px;
     box-shadow: 0px 40px 50px rgb(32 29 42 / 75%);
     width: 73%;
-    height: 70%;
     margin: auto;
     margin-top: 10.7rem;
     background-color: #302C40;
     border-radius: 16px;
 }
-
 aside .avatar {
     display: block;
     position: relative;
@@ -60,6 +58,7 @@ aside .avatar {
     margin-right: auto;
     /* clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
 }
+
 img {
     border-radius: 5px;
     width: 100%;
@@ -107,7 +106,7 @@ i {
 main {
     padding:.4em 2em;
     line-height: 1.5rem;
-    height: 800px;
+    height: fit-content;
 }
 main h1 {
     font-size: 1.9rem;
@@ -193,38 +192,49 @@ nav li  {
 
 @media screen and (max-width:500px) {
     * {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .container {
         flex-direction: column;
         padding: 0%;
         height: fit-content;
+        background-size: contain;
     }
     aside {
         position: static;
         width: 90%;
-        padding-bottom: 4rem;
+        padding-bottom:.5rem;
         text-align: center;
-        margin-top: 10.7rem;
+        margin-top: 7.2rem;
     }
     aside button {
-        padding: .4rem 1rem;
+        padding: .5rem 2rem;
         margin: 0rem 0rem 1rem 0rem;
         border-radius: 20px;
     }
-    
+.cv {
+  padding:1.2rem 6.3rem;
+}
     aside h2 {
         text-align: center;
         font-size: 1.4rem;
         font-weight: normal;
-        margin:44px 0px 12px 0px;
+        margin:40px 0px 10px 0px;
     }
     main {
-        margin-top: 20px;
-        padding: 1rem;
+        margin-top: 10px;
+        padding:0rem 1rem;
         width: 90%;
         height: fit-content;
     }
+
+   main h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom:.3rem;
+    padding:  0px 0px 6px  0px;
+}
+  
     .header {
         position: static;
     }
@@ -241,8 +251,10 @@ nav li  {
     }
     nav {
         position: fixed;
-        top: 0px;
-        right: 0rem;
+        top: 20px;
+        right: 20px;
+        height: 2.75rem;
+        width:2.75rem;
     }
     .nav {
         position: fixed;
@@ -278,5 +290,29 @@ nav li  {
         display: none;
         opacity: 0.2;
     }
-    
+    aside img {
+    border-radius: 5px;
+    width: 100%;
+    height: 180px; 
+}
+
+  aside .avatar {
+    display: block;
+    position: relative;
+    margin-top: -6rem;
+    margin-bottom: 1.5625rem;
+    margin-left: auto;
+    /* max-height: 11.25rem; */
+    /* max-width: 11.25rem; */
+    height: 11.25rem;
+    width: 8.85rem;
+    margin-right: auto;
+    /* clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+}
+
+  .hamburger .line {
+    height: 0.1875rem;
+    width: 1.1rem;
+  } 
+
 }
